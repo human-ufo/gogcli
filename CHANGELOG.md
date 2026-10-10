@@ -2,6 +2,7 @@
 
 ## 0.43.1 - Unreleased
 
+- Gmail: add `--signature`, `--signature-from`, and `--signature-file` to `gmail drafts create`, `gmail drafts update`, `gmail forward`, and `gmail drafts forward`; the signature follows the sending alias and sits above the quote or between the note and the forwarded message. (#1193) — thanks @adameq.
 - Docker: pre-create `/persist/gogcli` owned by the non-root `gog` user so the documented named-volume `GOG_HOME` is writable on first run, and document the one-time ownership step for bind mounts and pre-existing volumes. (#1197) — thanks @wstock.
 - Dependencies: refresh Google API and telemetry modules, tracking-worker packages, pnpm 11, and x/tools while retaining the Go 1.26 floor and worker release cooldown.
 - Gmail: include recipient headers and optionally sanitize message-search content through CLI and MCP; preserve untrusted sender/recipient wrapping across JSON projection. (#1188) — thanks @kendrickkester.
